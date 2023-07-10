@@ -1,0 +1,19 @@
+{
+  "name": "vite-js",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue2": "^2.2.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.0",
+    "vue-tsc": "latest"
+  },
+  "dependencies": {
+    "vue": "^2.7.10",
+    "vue-intersect": "^1.1.6"
+  }
+}

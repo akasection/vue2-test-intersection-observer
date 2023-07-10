@@ -7,7 +7,7 @@
     <Intersect @enter="showPanel">
       <div class="intersect-container">
         <div class="intr" v-show="disp">
-          <Hide v-for="a in 3"></Hide>
+          <Hide v-for="_ in 3"></Hide>
         </div>
       </div>
     </Intersect>
@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted } from 'vue'
+import { defineComponent, ref, /*onMounted*/ } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Hide from './components/Hide.vue'
 import Intersect from 'vue-intersect'
@@ -40,7 +40,7 @@ export default defineComponent({
   setup() {
     const disp = ref(false)
     const tobat = ref<HTMLDivElement>()
-    const obs = ref<IntersectionObserver>()
+    // const obs = ref<IntersectionObserver>()
 
     function showPanel() {
       disp.value = true
